@@ -6,27 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular_four';
-
-  accounts=[
+  accounts = [
     {
-      name : 'Master Account',
-      status : 'Active'
+      name: 'Master Account',
+      status: 'active'
     },
     {
-      name : 'Test Account',
-      status : 'Inactive'
+      name: 'Testaccount',
+      status: 'inactive'
     },
     {
-      name : 'Hidden Account',
-      status : 'Unknown'
+      name: 'Hidden Account',
+      status: 'unknown'
     }
   ];
 
-  onAccountAdded(newAccount:{name:string,status:string}){
+  onAccountAdded(newAccount: {name: string, status: string}) {
     this.accounts.push(newAccount);
   }
-  onStatusChanged(updateInfo : {id:number, newStatus:string}){
-    this.accounts[updateInfo.id].status=updateInfo.newStatus;
+
+  onStatusChanged(updateInfo: {id: number, newStatus: string}) {
+    this.accounts[updateInfo.id].status = updateInfo.newStatus;
   }
+  
 }
