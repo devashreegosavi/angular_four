@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,EventEmitter,Input} from '@angular/core';
 
 @Component({
   selector: 'app-account',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./account.component.css']
 })
 export class AccountComponent {
-
+  @Input() account : {name:string, status:string};
+  @Input() id: number;
+  @Output() statusChanged = new EventEmitter<{id : number,newStatus:string }>();
 }

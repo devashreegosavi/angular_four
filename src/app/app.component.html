@@ -9,7 +9,7 @@
     *ngFor="let acc of accounts: let i =index"
     [account]="acc"
     [id]="i"
-    (statusChanged)
+    (statusChanged)="onStatusChanged($event)"
     ></app-acccount>
   </div>
 </div>
