@@ -11,7 +11,7 @@ export class AppComponent {
   accounts=[
     {
       name : 'Master Account',
-      status : 'active'
+      status : 'Active'
     },
     {
       name : 'Test Account',

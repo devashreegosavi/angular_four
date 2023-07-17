@@ -13,5 +13,6 @@ export class NewAccountComponent {
       name : accountName,
       status : accountStatus
     });
+    console.log('A Server Status Changed, new Status : '+accountStatus);
   }
 }
